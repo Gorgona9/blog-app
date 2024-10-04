@@ -91,7 +91,7 @@ watch(user, async () => {
 
         <div class="flex justify-between space-x-5 align-bottom mt-14">
 
-          <NuxtLink to="https://github.com/jurassicjs/nuxt3-fullstack-tutorial">
+          <NuxtLink to="https://github.com/Gorgona9/blog-app">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
               role="img" class="dark:text-gray-50 h-6 w-6 hidden lg:block" width="0.97em" height="1em"
               preserveAspectRatio="xMidYMid meet" viewBox="0 0 496 512">
@@ -161,7 +161,7 @@ watch(user, async () => {
 
       <div class="py-4 overflow-y-auto">
         <ul class="space-y-2">
-          
+
           <li>
 
             <button class="ml-2" @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')">
@@ -177,7 +177,7 @@ watch(user, async () => {
               </svg>
             </button>
           </li>
-          <NuxtLink to="https://github.com/jurassicjs/nuxt3-fullstack-tutorial">
+          <NuxtLink to="https://github.com/Gorgona9/blog-app">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
               role="img" class="text-gray-500 dark:text-gray-200 h-6 w-6 ml-2 mt-2 " width="0.97em" height="1em"
               preserveAspectRatio="xMidYMid meet" viewBox="0 0 496 512">

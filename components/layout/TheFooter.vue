@@ -30,7 +30,7 @@
 
 
     <div>
-     <NuxtLink to="https://github.com/jurassicjs/nuxt3-fullstack-tutorial" class="text-gray-800">
+     <NuxtLink to="https://github.com/Gorgona9" class="text-gray-800">
       <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github"
        class="svg-inline--fa fa-github w-4 dark:text-white" role="img" xmlns="http://www.w3.org/2000/svg"
        viewBox="0 0 496 512">

@@ -13,8 +13,8 @@
      <slot/>
      <div class="flex-grow alert-content">
        <ContentSlot unwrap="p">
-         <template #between>
-           <br> <slot/>
+         <template >
+           <br> <slot />
          </template>
        </ContentSlot>
      </div>
@@ -71,7 +71,7 @@ defineProps({
          @apply border-yellow-400 dark:border-yellow-700;
        }
      }
-  
+
  }
  &.danger {
    @apply bg-red-50 dark:bg-red-800 dark:bg-opacity-25 text-red-600 dark:text-red-100;

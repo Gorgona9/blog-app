@@ -89,7 +89,7 @@ watch(user, async () => {
               <nuxt-link to="/topics/news">
                 <span
                   class="text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300 ">
-                  News 
+                  News
                 </span>
               </nuxt-link>
             </span>
@@ -98,7 +98,7 @@ watch(user, async () => {
 
         <div class="flex justify-between space-x-5 align-bottom mt-14">
 
-          <NuxtLink to="https://github.com/jurassicjs/nuxt3-fullstack-tutorial">
+          <NuxtLink to="https://github.com/Gorgona9/blog-app">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
               role="img" class="dark:text-gray-50 h-6 w-6 hidden lg:block hover:dark:text-gray-400 hover:text-gray-400" width="0.97em" height="1em"
               preserveAspectRatio="xMidYMid meet" viewBox="0 0 496 512">
@@ -130,8 +130,8 @@ watch(user, async () => {
 
           <span class="hidden md:block " @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')">
             <svg v-if="$colorMode.value == 'dark'" xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-gray-50 hidden lg:block hover:dark:text-yellow-400 hover:text-yellow-400" 
-              viewBox="0 0 20 20" 
+              class="h-6 w-6 text-gray-50 hidden lg:block hover:dark:text-yellow-400 hover:text-yellow-400"
+              viewBox="0 0 20 20"
               fill="currentColor">
               <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
             </svg>
@@ -184,7 +184,7 @@ watch(user, async () => {
               </svg>
             </button>
           </li>
-          <NuxtLink to="https://github.com/jurassicjs/nuxt3-fullstack-tutorial">
+          <NuxtLink to="https://github.com/Gorgona9/blog-app">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
               role="img" class="text-gray-500 dark:text-gray-200 h-6 w-6 ml-2 mt-2 " width="0.97em" height="1em"
               preserveAspectRatio="xMidYMid meet" viewBox="0 0 496 512">

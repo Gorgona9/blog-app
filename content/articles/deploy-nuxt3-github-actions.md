@@ -121,11 +121,6 @@ If you want SSL, which you most likely will, you can use [certbot](https://certb
 
 Note: you can do all of this tutorial without setting up SSL. 
 
-
-## Bird's Eye View
-
-![photo of github jobs flow diagram](https://fullstackjack.dev/img/deployment-jobs-overview.png "https://github.com/jurassicjs/nuxt3-fullstack-tutorial/actions")
-
 ### It all begins with a workflow.
 
 A workflow is a document which lists the tasks you'd like to automate. In our case, we'll be automating
