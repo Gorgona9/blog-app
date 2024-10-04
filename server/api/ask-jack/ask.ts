@@ -1,5 +1,5 @@
 import { getCookie, readBody } from "h3";
-import { createQuestion } from "~/server/database/repositories/askJackRespository";
+import { createQuestion } from "~/server/database/repositories/justAskRespository";
 import { getUserBySessionToken } from '~/server/app/services/sessionService'
 import sendDefaultErrorResponse from "~~/server/app/errors/responses/DefaultErrorsResponse";
 

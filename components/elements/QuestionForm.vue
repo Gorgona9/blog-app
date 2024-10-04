@@ -9,7 +9,7 @@ interface Props {
   data: IQuestionPost
   endpoint?: String
 }
- 
+
 const props = defineProps<Props>()
 const data = props.data
 const router = useRouter()
@@ -22,11 +22,11 @@ async function postQuestion() {
     () => `${props.endpoint}`, { method: 'post', body: { data }, pick: ['id'] }
   );
 
-  router.push(`/ask-jack/question/${question?.value?.id}`)
+  router.push(`/just-ask/question/${question?.value?.id}`)
 }
 
 </script>
-  
+
   <template>
   <form @submit.preventDefault="postQuestion">
     <Tiptap v-model="data.description" label="Provide any information you think would help get your question answered" :editable="isEditable" />

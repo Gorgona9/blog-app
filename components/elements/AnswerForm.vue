@@ -15,7 +15,7 @@ const data: IAnswerPost = reactive({
 const showAnswerForm = useState('showAnswerForm' + questionId)
 
 async function postAnswer() {
-  const answer = await $fetch(`/api/ask-jack/answer`, { method: 'post', body: { data } });
+  const answer = await $fetch(`/api/just-ask/answer`, { method: 'post', body: { data } });
 
   const newAnswer = useState('newAnswer')
   newAnswer.value = answer

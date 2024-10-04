@@ -1,5 +1,5 @@
 
-import { searchQuestions } from "~/server/database/repositories/askJackRespository";
+import { searchQuestions } from "~/server/database/repositories/justAskRespository";
 import { getUserById } from "~/server/database/repositories/userRespository";
 
 export default eventHandler(async (event) => {

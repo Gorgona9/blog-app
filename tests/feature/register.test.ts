@@ -9,7 +9,7 @@ describe('Test Registration', async () => {
         // test context options
     })
     test('incorrectly formatted email returns error', async () => {
-        const givenEmail = 'test@fullstackjack'
+        const givenEmail = 'test@fullstackdev'
 
         await $fetch('/api/auth/register',
             {
@@ -44,7 +44,7 @@ describe('Test Registration', async () => {
                 body: {
                     username: givenUsername,
                     name: givenName,
-                    email: 'testDublicate@fullstackjack.dev',
+                    email: 'testDublicate@fullstackdev.dev',
                     password: '12345678'
                 },
             }).catch(error => {})
@@ -56,7 +56,7 @@ describe('Test Registration', async () => {
                 body: {
                     username: givenUsername2,
                     name: givenName2,
-                    email: 'testDublicate@fullstackjack.dev',
+                    email: 'testDublicate@fullstackdev.dev',
                     password: '12345678'
                 },
             }).catch(error => {
@@ -69,8 +69,8 @@ describe('Test Registration', async () => {
     })
 
     test('already used name returns error', async () => {
-        const givenEmail = uuidv4().replaceAll('-', '') + '@fullstackjack.dev'
-        const givenEmail2 = uuidv4().replaceAll('-', '') + '@fullstackjack.dev'
+        const givenEmail = uuidv4().replaceAll('-', '') + '@fullstackdev.dev'
+        const givenEmail2 = uuidv4().replaceAll('-', '') + '@fullstackdev.dev'
         const givenName = uuidv4().replaceAll('-', '')
         const givenName2 = uuidv4().replaceAll('-', '')
 
@@ -107,7 +107,7 @@ describe('Test Registration', async () => {
     })
 
     test('vaild data registers new user', async () => {
-        const givenEmail = uuidv4().replaceAll('-', '') + '@fullstackjack.dev'
+        const givenEmail = uuidv4().replaceAll('-', '') + '@fullstackdev.dev'
         const givenUsername = uuidv4().replaceAll('-', '')
         const givenName = uuidv4().replaceAll('-', '')
 

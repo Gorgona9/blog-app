@@ -2,9 +2,9 @@
   <div class="flex flex-column justify-between gap-10 py-10">
     <div class="mt-10">
       <div class="mb-10 text-center gap-10">
-        <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Full Stack Jack</h2>
+        <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Full Stack Dev</h2>
       </div>
-     
+
       <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-20">
         <div class="relative mb-5">
           <dt>
@@ -27,7 +27,7 @@
           </dd>
         </div>
 
-        <nuxt-link to="/ask-jack/search">
+        <nuxt-link to="/just-ask/search">
           <div class="relative mb-5">
             <dt>
               <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white bg-gradient-to-r hover:from-green-500 hover:to-teal-400 md:hover:scale-110">
@@ -37,7 +37,7 @@
                     clip-rule="evenodd" />
                 </svg>
               </div>
-              <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">Ask Jack</p>
+              <p class="ml-16 text-lg leading-6 font-medium text-gray-900 dark:text-white">Just Ask</p>
             </dt>
             <dd class="mt-2 ml-16 text-base text-gray-500">
               A place to learn and teach
@@ -63,7 +63,7 @@
           </div>
         </nuxt-link>
 
-        <a href="mailto:info@fullstackjack.dev">
+        <a href="mailto:astgh.trdatyan.g@gmail.com">
           <div class="mb-5">
             <dt>
               <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white bg-gradient-to-r hover:from-green-500 hover:to-teal-400 md:hover:scale-110">

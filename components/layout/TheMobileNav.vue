@@ -72,10 +72,10 @@ watch(user, async () => {
                 Tutorials
               </span>
             </nuxt-link>
-            <nuxt-link to="/ask-jack/search">
+            <nuxt-link to="/just-ask/search">
               <span
                 class="text-base font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-300 ">
-                Ask Jack
+                Just Ask
               </span>
             </nuxt-link>
             <span class="">
@@ -113,7 +113,7 @@ watch(user, async () => {
             </svg>
           </NuxtLink>
 
-          <NuxtLink to="https://twitter.com/jack_fullstack">
+          <NuxtLink to="#">
             <svg class="dark:text-gray-50 h-6 w-6 hidden lg:block" fill="none" viewBox="0 0 24 24">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M22 5.897c-.75.33-1.5.577-2.333.66A4.4 4.4 0 0021.5 4.33c-.833.495-1.667.825-2.583.99a4.053 4.053 0 00-3-1.32c-2.25 0-4.084 1.814-4.084 4.041 0 .33 0 .66.084.907-3.5-.165-6.5-1.814-8.5-4.288-.417.66-.584 1.32-.584 2.062 0 1.402.75 2.639 1.834 3.381-.667 0-1.334-.165-1.834-.495v.083c0 1.98 1.417 3.629 3.25 3.958-.333.083-.666.165-1.083.165-.25 0-.5 0-.75-.082.5 1.65 2 2.804 3.833 2.804C6.667 17.608 4.917 18.268 3 18.268c-.333 0-.667 0-1-.082C3.833 19.34 6 20 8.25 20c7.583 0 11.667-6.186 11.667-11.546v-.495c.833-.578 1.5-1.32 2.083-2.062z"
@@ -197,7 +197,7 @@ watch(user, async () => {
               </g>
             </svg>
           </NuxtLink>
-          <NuxtLink to="https://twitter.com/jack_fullstack">
+          <NuxtLink to="#">
             <svg class="text-gray-500 dark:text-gray-200 h-6 w-6 ml-2 mt-2" fill="none" viewBox="0 0 24 24">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M22 5.897c-.75.33-1.5.577-2.333.66A4.4 4.4 0 0021.5 4.33c-.833.495-1.667.825-2.583.99a4.053 4.053 0 00-3-1.32c-2.25 0-4.084 1.814-4.084 4.041 0 .33 0 .66.084.907-3.5-.165-6.5-1.814-8.5-4.288-.417.66-.584 1.32-.584 2.062 0 1.402.75 2.639 1.834 3.381-.667 0-1.334-.165-1.834-.495v.083c0 1.98 1.417 3.629 3.25 3.958-.333.083-.666.165-1.083.165-.25 0-.5 0-.75-.082.5 1.65 2 2.804 3.833 2.804C6.667 17.608 4.917 18.268 3 18.268c-.333 0-.667 0-1-.082C3.833 19.34 6 20 8.25 20c7.583 0 11.667-6.186 11.667-11.546v-.495c.833-.578 1.5-1.32 2.083-2.062z"
@@ -257,14 +257,14 @@ watch(user, async () => {
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/ask-jack/search"
+            <NuxtLink to="/just-ask/search"
               class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
               </svg>
-              <span class="flex-1 ml-3 whitespace-nowrap">Ask Jack</span>
+              <span class="flex-1 ml-3 whitespace-nowrap">Just Ask</span>
             </NuxtLink>
           </li>
           <li v-if="!isLoggedIn">

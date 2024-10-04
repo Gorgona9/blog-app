@@ -7,8 +7,8 @@ describe('test email validation', async () => {
 
   vi.mock('~/server/database/repositories/userRespository', () => {
     return {
-      getUserByEmail: vi.fn(() => ({ email: 'test@fullstackjack.com' })),
-      getUserByUserName: vi.fn(() => ({ email: 'test@fullstackjack.com' }))
+      getUserByEmail: vi.fn(() => ({ email: 'test@fullstackdev.com' })),
+      getUserByUserName: vi.fn(() => ({ email: 'test@fullstackdev.com' }))
     }
   })
 
@@ -44,7 +44,7 @@ describe('test email validation', async () => {
 
   it('should return error if email taken', async () => {
 
-    const email = 'test@fullstackjack.com'
+    const email = 'test@fullstackdev.com'
 
     const res = await validate({
       username: '',

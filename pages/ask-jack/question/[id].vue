@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AskJackSidebar from "~/components/elements/AskJackSidebar.vue";
+import JustAskSidebar from "~/components/elements/JustAskSidebar.vue";
 import AnswerForm from "~/components/elements/AnswerForm.vue";
 import QuestionForm from "~~/components/elements/QuestionForm.vue";
 import Tiptap from "~~/components/elements/Tiptap.vue";
@@ -15,7 +15,7 @@ const showAnswerButton = ref(false)
 const isLoggedIn = await useLoggedIn()
 
 const { data: question } = await useFetch<IQuestion>(
-  `/api/ask-jack/question?id=${questionId}`, { key: route.fullPath }
+  `/api/just-ask/question?id=${questionId}`, { key: route.fullPath }
   )
 
 const showAnswerForm = useState('showAnswerForm' + questionId, () => false)
@@ -23,18 +23,18 @@ const showAnswerForm = useState('showAnswerForm' + questionId, () => false)
 const isMine = question?.value?.authorId == me?.id
 
 async function deleteQuestion() {
-  const {data: deleted}  = await useFetch('/api/ask-jack/delete-question', {
+  const {data: deleted}  = await useFetch('/api/just-ask/delete-question', {
    method: 'POST',
    body: {questionId}
-  }) 
+  })
 
   showDeleted.value = true
   setTimeout(() => {
-   router.push('/ask-jack/search')
+   router.push('/just-ask/search')
   })
 }
 
-const editEndpoint = '/api/ask-jack/edit-question'
+const editEndpoint = '/api/just-ask/edit-question'
 function addAnswer(answer: IAnswer) {
  console.log('&&&&&&&&& add answer')
  question.value?.answers.push(answer)
@@ -42,21 +42,21 @@ function addAnswer(answer: IAnswer) {
 }
 
 </script>
- 
+
  <template>
 
  <div
   class=" min-h-full theme-modebg-white dark:bg-black0">
   <div class="h-32 flex justify-center">
    <div class="flex m-5">
-    <img class="mx-auto h-24 w-auto" src="/img/logo_clear_fsj.png" alt="full stack jack logo" />
+    <img class="mx-auto h-24 w-auto" src="/img/logo_clear_fsj.png" alt="full stack dev logo" />
     <h1 class="py-9 text-center text-5xl font-extrabold text-gray-900 dark:text-gray-400 ml-4">
-     Ask Jack
+      Just Ask
     </h1>
    </div>
   </div>
   <div class="md:flex">
-   <AskJackSidebar />
+   <JustAskSidebar />
    <div class="md:w-1/3 z-1 flex justify-right relative"></div>
    <div class="w-full md:w-1/3">
     <div class="p-8 text-white bg-lime-600 dark:bg-black rounded shadow-md" v-if="showDeleted">
@@ -73,7 +73,7 @@ function addAnswer(answer: IAnswer) {
        <!-- <p class="dark:text-gray-300">{{ question.description }}</p> -->
 
        <Tiptap v-if="!showEditForm" v-model="question.description" label="" :editable="false" />
-       
+
        <div class="mt-5" v-if="isMine && showEditForm == false">
         <button @click="showEditForm = true" class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
          Edit
@@ -82,7 +82,7 @@ function addAnswer(answer: IAnswer) {
          delete
         </button>
        </div>
-       
+
        <QuestionForm :endpoint="editEndpoint" :data="question" v-if="showEditForm"/>
 
       </div>

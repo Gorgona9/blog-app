@@ -10,7 +10,7 @@ console.log(route.path)
 
 function goToAskForm() {
     if (isLoggedIn) {
-        router.push('/ask-jack/ask')
+        router.push('/just-ask/ask')
     }
 
     hideDialog.value = false
@@ -47,18 +47,18 @@ function rehide() {
                     <div class="text-xl mt-5 text-link">
                         <NuxtLink  to="/register">No Account? Register now</NuxtLink>
                     </div>
-                  
+
                 </div>
             </div>
         </dialog-box>
         <div class=" pt-5 z-10 boarder  justify-right sm:fixed">
             <div class="w-100 sm:block" aria-label="Sidebar">
                 <div class="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-900">
-                    <span v-if="route.path !== '/ask-jack/ask'" @click="goToAskForm" type="button"
+                    <span v-if="route.path !== '/just-ask/ask'" @click="goToAskForm" type="button"
                         class="w-full px-6 py-3.5 text-white bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
                         Ask Question
                     </span>
-                    <nuxt-link v-if="route.path !== '/ask-jack/search'" to="/ask-jack/search" type="button"
+                    <nuxt-link v-if="route.path !== '/just-ask/search'" to="/just-ask/search" type="button"
                         class="w-full px-6 py-3.5 text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
                         Search Questions
                     </nuxt-link>
@@ -88,7 +88,7 @@ function rehide() {
                                         d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
                                     </path>
                                 </svg>
-                                <span class="flex-1 ml-3 whitespace-nowrap">Ask Jack personally</span>
+                                <span class="flex-1 ml-3 whitespace-nowrap">Ask personally</span>
                                 <span
                                     class="inline-flex justify-center items-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
                             </a>

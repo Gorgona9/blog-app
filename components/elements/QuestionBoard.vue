@@ -2,8 +2,8 @@
 import Tiptap from "~~/components/elements/Tiptap.vue";
 
  const searchInput = ref("");
- 
- const { data: questions, pending, refresh, error } = await useFetch<IQuestion[]>(() => `/api/ask-jack/search?search=${searchInput.value}`, {server:false})
+
+ const { data: questions, pending, refresh, error } = await useFetch<IQuestion[]>(() => `/api/just-ask/search?search=${searchInput.value}`, {server:false})
 
  refresh()
 
@@ -12,9 +12,9 @@ import Tiptap from "~~/components/elements/Tiptap.vue";
          refresh()
      }
  }
- 
+
  </script>
- 
+
  <template>
      <div class="w-full md:w-1/3">
          <div>
@@ -36,12 +36,12 @@ import Tiptap from "~~/components/elements/Tiptap.vue";
                  </div>
              </div>
          </div>
- 
- 
+
+
          <Transition name="fade" v-if="!pending" v-for="question in questions">
              <NuxtLink v-if="question"
                  class="flex flex-column justify-cente hover:scale-110 tranition duration-500"
-                 :to="`/ask-jack/question/${question.id}`">
+                 :to="`/just-ask/question/${question.id}`">
                  <div class="max-w-xxl w-full p-4">
                      <div class="p-8 bg-white dark:bg-black rounded-lg shadow-md">
                         <div class="flex justify-end dark:text-gray-300">
@@ -53,7 +53,7 @@ import Tiptap from "~~/components/elements/Tiptap.vue";
              </NuxtLink>
          </Transition>
      </div>
- 
- 
+
+
  </template>
- 
+

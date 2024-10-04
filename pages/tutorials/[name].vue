@@ -69,7 +69,7 @@ onMounted(() => {
       <div class="text-gray-800 dark:text-gray-100 text-xl">
         <div class="p-2.5 mt-1 flex items-center">
           <NuxtLink to="/">
-            <img class="h-20" src="/img/logo_clear_fsj.png" alt="full stack jack logo">
+            <img class="h-20" src="/img/logo_clear_fsj.png" alt="full stack dev logo">
             <h1 class="font-bold text-gray-800 dark:text-gray-200 text-[15px]">Full Stack Jack</h1>
           </NuxtLink>
         </div>

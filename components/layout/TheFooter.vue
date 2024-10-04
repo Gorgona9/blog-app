@@ -4,7 +4,7 @@
    <div class="flex justify-between max-w-lg mb-9 mt-10 space-x-10">
 
     <div>
-     <NuxtLink to="https://twitter.com/jack_fullstack" class="text-gray-800">
+     <NuxtLink to="#" class="text-gray-800">
       <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
        class="svg-inline--fa fa-twitter w-4 dark:text-white" role="img" xmlns="http://www.w3.org/2000/svg"
        viewBox="0 0 512 512">

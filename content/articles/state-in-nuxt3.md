@@ -41,8 +41,7 @@ We must keep in mind, the browser is not the only thing that can restart. The se
   })
 ```
 
-If you want persistent state on the server side you can use a full blown database like Postgres or MySql, or even a simple file: Whatever works for you. My recommendation is to use Prisma.js.
-You can find out how to use it in my tutorials on my youtube channel:  [full stack jack](https://youtube.com/c/fullstackjack)
+If you want persistent state on the server side you can use a full blown database like Postgres or MySql, or even a simple file: Whatever works for you. 
 
 ## Client Side State
 

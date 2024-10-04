@@ -13,7 +13,7 @@ data fetching
 
 ```js
 const answer = await useFetch(
-    () => `/api/ask-jack/answer`, { method: 'post', body: { data } }
+    () => `/api/just-ask/answer`, { method: 'post', body: { data } }
   );
 ```
 

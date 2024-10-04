@@ -13,9 +13,9 @@ export default eventHandler(async (event) => {
 async function protectAuthRoute(event: H3Event): Promise<boolean> {
 
  const protectedRoutes = [
-  '/api/ask-jack/ask',
-  '/api/ask-jack/edit-question/',
-  'api/ask-jack/delete-question'
+  '/api/just-ask/ask',
+  '/api/just-ask/edit-question/',
+  'api/just-ask/delete-question'
  ]
 
  if (!event?.path || !protectedRoutes.includes(event.path)) {

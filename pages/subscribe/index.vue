@@ -17,7 +17,7 @@ function goToRegister() {
     class="min-h-screen bg-white dark:bg-black">
     <div class="container m-auto px-6 py-20 md:px-12 lg:px-20">
       <div class="m-auto text-center lg:w-8/12 xl:w-7/12">
-        <h2 class="text-2xl text-gray-800 dark:text-gray-200 font-bold md:text-4xl">Full Stack Jack Pro.
+        <h2 class="text-2xl text-gray-800 dark:text-gray-200 font-bold md:text-4xl">Full Stack Dev Pro.
         </h2>
       </div>
       <div class="mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-10/12">
@@ -48,7 +48,7 @@ function goToRegister() {
               </li>
               <li class="space-x-2">
                 <span class="text-purple-500 font-semibold">&check;</span>
-                <span>Support Full Stack Jack</span>
+                <span>Support Full Stack Dev</span>
               </li>
             </ul>
             <button v-if="user == null" @click="goToRegister"

@@ -1,6 +1,6 @@
 
 import { defineEventHandler } from "h3";
-import { findQuestion } from "~/server/database/repositories/askJackRespository";
+import { findQuestion } from "~/server/database/repositories/justAskRespository";
 import { getUserById } from "~/server/database/repositories/userRespository";
 
 export default defineEventHandler(async (event) => {
@@ -8,7 +8,7 @@ export default defineEventHandler(async (event) => {
     const questionId = parseInt(queries.id as string)
 
     const question =  await findQuestion(questionId)
-    
+
     question.answers.forEach(async (answer: IAnswer) => {
         const user = await getUserById(answer.authorId)
         answer.authorName = '@' + user.username
